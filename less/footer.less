@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+
+    @media @phone {
+        flex-wrap: wrap;
+    }
+
+    .nav-links {
+        .nav-mixin();
+        border-bottom: @border-bottom;
+    }
+    
+
+    p {
+        text-transform: uppercase;
+
+        @media @phone {
+            padding-top: 2em;
+        }
+    }
+}
